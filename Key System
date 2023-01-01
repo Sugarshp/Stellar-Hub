@@ -1,0 +1,62 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Stellar Hub (Key System)", HidePremium = true, IntroText = "Key System", SaveConfig = true, ConfigFolder = "Config"})
+
+OrionLib:MakeNotification({
+	Name = "Stellar Hub",
+	Content = "Stellar Hub Key System",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+_G.Key = "Stellar Key"
+_G.KeyInput = "String"
+
+function MakeScriptHub()
+    local Window = OrionLib:MakeWindow({Name = "Stellar Hub", HidePremium = true, IntroText = "Stellar Hub", SaveConfig = true, ConfigFolder = "Config"})
+end
+
+function CorrectKeyNoti()
+    OrionLib:MakeNotification({
+        Name = "Correct Key!",
+        Content = "Your Key Is Correct",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function IncorrectKeyNoti()
+    OrionLib:MakeNotification({
+        Name = "Incorrect Key!",
+        Content = "Please Enter The Correct Key",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+    Name = "Key",
+    icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "Enter Key",
+    Default = "",
+    TextDisappear = true,
+    Callback = function(Value)
+        _G.KeyInput = Value
+    end
+})
+
+Tab:AddButton({
+    Name = "Check Key",
+    Callback = function()
+        if _G.KeyInput == _G.Key then 
+        MakeScriptHub()
+        CorrectKeyNoti()
+        else
+            IncorrectKeyNoti()
+        end
+    end
+})
