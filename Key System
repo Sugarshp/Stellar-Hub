@@ -13,7 +13,7 @@ _G.Key = "Stellar Key"
 _G.KeyInput = "String"
 
 function MakeScriptHub()
-    local Window = OrionLib:MakeWindow({Name = "Stellar Hub", HidePremium = true, IntroText = "Stellar Hub", SaveConfig = true, ConfigFolder = "Config"})
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Sugarshp/Stellar-Hub/main/Main'))()
 end
 
 function CorrectKeyNoti()
