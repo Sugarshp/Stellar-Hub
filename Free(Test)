@@ -9,7 +9,19 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-local Window = OrionLib:MakeWindow({Name = "Stellar Hub (Free)", HidePremium = false, IntroText = "Thx to Orion Library", Icon = "rbxassetid://8834748103", IntroIcon = "rbxassetid://8834748103", SaveConfig = false, ConfigFolder = "Config"})
+local Window = OrionLib:MakeWindow({
+  Name = "Stellar Hub (Free)",
+  HidePremium = false,
+  IntroText = "Thx to Orion Library",
+  Icon = "rbxassetid://8834748103",
+  IntroIcon = "rbxassetid://8834748103",
+  SaveConfig = false,
+  ConfigFolder = "Config",
+  BackgroundColor = Color3.fromRGB(0, 0, 0),
+  Image = "https://i.imgur.com/T6G0o6T.jpg",
+  ImageColor = Color3.fromRGB(255, 255, 255),
+  ImageTransparency = 0.5
+})
 
 local Tab = Window:MakeTab({
 	Name = "Info",
