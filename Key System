@@ -9,11 +9,27 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "Stellar Key"
+_G.FreeKey = "FreeKey"
 _G.KeyInput = "String"
 
-function MakeScriptHub()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Sugarshp/Stellar-Hub/main/Main'))()
+_G.PaidKey = "PaidKey"
+_G.KeyInput = "String"
+
+function MakeFreeScriptHub()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Sugarshp/Stellar-Hub/main/Free(Test)'))()
+end
+
+function MakePaidScriptHub()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Sugarshp/Stellar-Hub/main/Paid(Test)'))()
+end
+
+function BypassKeyNoti()
+    OrionLib:MakeNotification({
+        Name = "Bypass Key Succeed!",
+        Content = "Your Key Is Bypassed",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
 end
 
 function CorrectKeyNoti()
@@ -52,11 +68,23 @@ Tab:AddTextbox({
 Tab:AddButton({
     Name = "Check Key",
     Callback = function()
-        if _G.KeyInput == _G.Key then 
-        MakeScriptHub()
-        CorrectKeyNoti()
+        if _G.KeyInput == _G.FreeKey then 
+            MakeFreeScriptHub()
+            CorrectKeyNoti()
+        elseif _G.KeyInput == _G.PaidKey then
+            MakePaidScriptHub()
+            CorrectKeyNoti()
         else
             IncorrectKeyNoti()
         end
+    end
+})
+
+
+Tab:AddButton({
+    Name = "Bypass",
+    Callback = function()
+        MakePaidScriptHub()
+        BypassKeyNoti()
     end
 })
