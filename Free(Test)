@@ -12,6 +12,33 @@ OrionLib:MakeNotification({
 local Window = OrionLib:MakeWindow({Name = "Stellar Hub (Free)", HidePremium = false, IntroText = "Thx to Orion Library", Icon = "rbxassetid://8834748103", IntroIcon = "rbxassetid://8834748103", SaveConfig = false, ConfigFolder = "Config"})
 
 local Tab = Window:MakeTab({
+	Name = "Info",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("---------Free Game---------")
+Tab:AddLabel("Aimblox Beta")
+Tab:AddLabel("Blox Fruit")
+Tab:AddLabel("Door")
+Tab:AddLabel("Asenal")
+Tab:AddLabel("Edward The Man-Eating Train")
+Tab:AddLabel("Jail Break")
+Tab:AddLabel("Mimic")
+Tab:AddLabel("Survive The Night")
+Tab:AddLabel("Snow Shoveling simulator")
+Tab:AddLabel("---------Paid Game---------")
+Tab:AddLabel("Phantom Force")
+Tab:AddLabel("Wheel Hub")
+Tab:AddLabel("The Wild West")
+Tab:AddLabel("Steel Ball Run (YBA)")
+Tab:AddLabel("Michael Zombie")
+Tab:AddLabel("Black Hawk Rescue Mission 5")
+Tab:AddLabel("Evade")
+Tab:AddLabel("Decaying Winter")
+Tab:AddLabel("---------------------------")
+
+local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://8834748103",
 	PremiumOnly = false
@@ -185,32 +212,6 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "Info",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddLabel("---------Free Game---------")
-Tab:AddLabel("Aimblox Beta")
-Tab:AddLabel("Blox Fruit")
-Tab:AddLabel("Door")
-Tab:AddLabel("Asenal")
-Tab:AddLabel("Edward The Man-Eating Train")
-Tab:AddLabel("Jail Break")
-Tab:AddLabel("Mimic")
-Tab:AddLabel("Survive The Night")
-Tab:AddLabel("Snow Shoveling simulator")
-Tab:AddLabel("---------Paid Game---------")
-Tab:AddLabel("Phantom Force")
-Tab:AddLabel("Wheel Hub")
-Tab:AddLabel("The Wild West")
-Tab:AddLabel("Steel Ball Run (YBA)")
-Tab:AddLabel("Michael Zombie")
-Tab:AddLabel("Black Hawk Rescue Mission 5")
-Tab:AddLabel("Evade")
-Tab:AddLabel("Decaying Winter")
-
-local Tab = Window:MakeTab({
 	Name = "Universe Script",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -241,8 +242,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://7734053495",
 	PremiumOnly = false
 })
-
-
 
 Tab:AddButton({
 	Name = "Destroy Ui",
