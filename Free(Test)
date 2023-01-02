@@ -1,0 +1,265 @@
+-- Orion Library : https://github.com/shlexware/Orion/blob/main/Documentation.md
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+OrionLib:MakeNotification({
+	Name = "Stellar Hub",
+	Content = "Thx For Using Stellar Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Window = OrionLib:MakeWindow({Name = "Stellar Hub (Free)", HidePremium = false, IntroText = "Thx to Orion Library", Icon = "rbxassetid://8834748103", IntroIcon = "rbxassetid://8834748103", SaveConfig = false, ConfigFolder = "Config"})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://8834748103",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Free Script"
+})
+
+Tab:AddButton({
+    Name = "Aimblox Beta",
+	Callback = function()
+        loadstring(game.HttpGet("https://pastebin.com/raw/6YukDPxX"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Blox Fruit",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Door",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Asenal",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Edward The Man-Eating Train",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/KING-HUB-NO-1/main/kingshubno1"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Jail Break",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Mimic",
+	Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/CheapeeWastaken/Lazium/main/TheMain")()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Survive The Night",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Snow Shoveling simulator",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CrazorTheCat/thiscontainstuff/main/snowShovelingSimulatorGUI.lua"))()
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Paid Script"
+})
+
+Tab:AddButton({
+	Name = "Phantom Force",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Wheel Hub",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "The Wild West",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Steel Ball Run (YBA)",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Michael Zombie",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Black Hawk Rescue Mission 5",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Evade",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Decaying Winter",
+	Callback = function()
+		local message = "You haven't Paid yet!"
+        local popup = Instance.new("Message")
+        popup.Text = message
+        popup.Parent = game.Workspace
+        wait(3)
+        popup:Destroy()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Info",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("---------Free Game---------")
+Tab:AddLabel("Aimblox Beta")
+Tab:AddLabel("Blox Fruit")
+Tab:AddLabel("Door")
+Tab:AddLabel("Asenal")
+Tab:AddLabel("Edward The Man-Eating Train")
+Tab:AddLabel("Jail Break")
+Tab:AddLabel("Mimic")
+Tab:AddLabel("Survive The Night")
+Tab:AddLabel("Snow Shoveling simulator")
+Tab:AddLabel("---------Paid Game---------")
+Tab:AddLabel("Phantom Force")
+Tab:AddLabel("Wheel Hub")
+Tab:AddLabel("The Wild West")
+Tab:AddLabel("Steel Ball Run (YBA)")
+Tab:AddLabel("Michael Zombie")
+Tab:AddLabel("Black Hawk Rescue Mission 5")
+Tab:AddLabel("Evade")
+Tab:AddLabel("Decaying Winter")
+
+local Tab = Window:MakeTab({
+	Name = "Universe Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddSlider({
+	Name = "Walk Speed",
+	Min = 0,
+	Max = 100,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walk Speed (normal 16)",
+	Callback = function(ws)
+		game.Players.LocalPlayer.character.Humanoid.WalkSpeed = ws
+	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://7734053495",
+	PremiumOnly = false
+})
+
+
+
+Tab:AddButton({
+	Name = "Destroy Ui",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Stellar Hub",
+            Content = "Thx For Using Stellar Hub",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+
+        OrionLib:Destroy()
+  	end    
+})
+
+game.Players.LocalPlayer.character.Humanoid.WalkSpeed = 16
+
+game.Players.LocalPlayer.character.Humanoid.JumpPower = 5
+
+OrionLib:Init()
